@@ -17,6 +17,7 @@ edges  = cv2.Canny(image,low_threshold,high_threshold)
 * 在依照上述三種方法找完邊緣後，再來就是確定Contours輪廓，它是由一連串沒間段的點所組成的曲獻，針對識別部分，此過程是屬於很重要的一個步驟。  
 在取得輪廓的過程基本流程如:
 依照自己所需的照片比例獲取  
+![](https://github.com/sheng19960125/Python-ImageProcessing/blob/master/base_image.png)   
 將召喚轉換為灰階   
 模糊化影像(高斯平滑模糊)  
 接著使用Canny方法尋找邊緣  
