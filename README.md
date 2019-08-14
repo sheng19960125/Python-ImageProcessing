@@ -1,7 +1,7 @@
 # Python-ImageProcessing  
 ## Python-Opencv  
-* openCV主要提供三種邊緣檢測方式來處理Edge detection分為 : Laplacian, Sobel, Canny  
-依技術的分類大致可以分為兩種 : Laplacian原稱為Laplacian method，透過計算零交越點上光度的二階導數（detect zero crossings of the second derivative on intensity changes），而Sobel和Canny使用的則是Gradient methods（梯度原理），它是透過計算像素光度的一階導數差異（detect changes in the first derivative of intensity）來進行邊緣檢測，而這次我們要利用Canny來處理我們的影像。  
+### openCV主要提供三種邊緣檢測方式來處理Edge detection分為 : Laplacian, Sobel, Canny  
+* 依技術的分類大致可以分為兩種 : Laplacian原稱為Laplacian method，透過計算零交越點上光度的二階導數（detect zero crossings of the second derivative on intensity changes），而Sobel和Canny使用的則是Gradient methods（梯度原理），它是透過計算像素光度的一階導數差異（detect changes in the first derivative of intensity）來進行邊緣檢測，而這次我們要利用Canny來處理我們的影像。  
     * Laplacian:此方法對於雜訊Noise非常敏感，所以在我們使用此方法之前基本上都需要使用模糊化後再使用Laplacian處理。  
     * Sobel:此方法與Canny使用同一種底層技術處理圖片，但Sobel是以相較簡單的方法，偵測圖像上水平及縱軸光度的變化，在加權平均方式產生個點數值來決定邊緣。  
     * Canny:雖然她不可以單獨拿來使用，但是結合模糊化後，可以比Sobel更加能處理雜訊的問題，但想當然硬體設備的需求依定相對較高。  
